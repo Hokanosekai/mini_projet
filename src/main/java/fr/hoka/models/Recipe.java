@@ -11,6 +11,7 @@ public class Recipe {
     Nutrition nutrition;
     List<Ingredient> ingredients = new ArrayList<>();
     List<Step> steps             = new ArrayList<>();
+
     public Recipe(String _id, String _title, String _comment, String _date, Nutrition _nutrition, List<Ingredient> _ingredients, List<Step> _steps) {
         this.id          = _id;
         this.title       = _title;

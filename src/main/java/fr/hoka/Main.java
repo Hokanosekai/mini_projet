@@ -27,7 +27,7 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-        System.out.println("------------------- RECIPES -------------------");
+        System.out.println("-------------------- RECIPES ---------------------");
 
         System.out.println("\n------------------- EXERCICE 1 -------------------");
         List<String> recipeTitles = recipeRepository.getRecipeTitles();
@@ -61,21 +61,21 @@ public class Main {
         System.out.println("\n------------------- EXERCICE 9 -------------------");
 
 
-        System.out.println("\n------------------- EXERCICE 10 -------------------");
+        System.out.println("\n------------------- EXERCICE 10 ------------------");
 
 
-        System.out.println("\n------------------- EXERCICE 11 -------------------");
+        System.out.println("\n------------------- EXERCICE 11 ------------------");
 
 
-        System.out.println("\n------------------- EXERCICE 12 -------------------");
+        System.out.println("\n------------------- EXERCICE 12 ------------------");
 
 
-        System.out.println("\n------------------- EXERCICE 13 -------------------");
+        System.out.println("\n------------------- EXERCICE 13 ------------------");
 
 
-        System.out.println("\n------------------- EXERCICE 14 -------------------");
+        System.out.println("\n------------------- EXERCICE 14 ------------------");
 
 
-        System.out.println("\n------------------- EXERCICE 15 -------------------");
+        System.out.println("\n------------------- EXERCICE 15 ------------------");
     }
 }

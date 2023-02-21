@@ -2,12 +2,12 @@ package fr.hoka.models;
 
 import java.util.List;
 
-public class ComplexIngredient extends Ingredient {
+public class CompositeIngredient extends Ingredient {
     private List<Ingredient> ingredients;
 
     private List<Step> steps;
 
-    public ComplexIngredient(String _name, List<Ingredient> _ingredients, List<Step> _steps) {
+    public CompositeIngredient(String _name, List<Ingredient> _ingredients, List<Step> _steps) {
         super(_name);
         this.ingredients = _ingredients;
         this.steps       = _steps;
@@ -41,8 +41,8 @@ public class ComplexIngredient extends Ingredient {
             return this;
         }
 
-        public ComplexIngredient build() {
-            return new ComplexIngredient(this.name, this.ingredients, this.steps);
+        public CompositeIngredient build() {
+            return new CompositeIngredient(this.name, this.ingredients, this.steps);
         }
     }
 

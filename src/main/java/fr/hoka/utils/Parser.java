@@ -83,7 +83,7 @@ public class Parser {
             NodeList childIngredients    = childNode.getElementsByTagName("rcp:ingredient");
 
             Ingredient ingredient = amount.isEmpty() && unit.isEmpty()
-                    ? new ComplexIngredient.Builder()
+                    ? new CompositeIngredient.Builder()
                             .setName(name)
                             .setIngredients(this.parseIngredients(childIngredients))
                             .build()

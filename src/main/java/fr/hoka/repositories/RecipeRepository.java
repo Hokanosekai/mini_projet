@@ -1,6 +1,6 @@
 package fr.hoka.repositories;
 
-import fr.hoka.models.ComplexIngredient;
+import fr.hoka.models.CompositeIngredient;
 import fr.hoka.models.Recipe;
 import fr.hoka.models.SimpleIngredient;
 
@@ -52,7 +52,7 @@ public class RecipeRepository {
                 .map(ingredient -> {
                     if (ingredient instanceof SimpleIngredient) {
                         return ingredient;
-                    } else if (ingredient instanceof ComplexIngredient) {
+                    } else if (ingredient instanceof CompositeIngredient) {
                         return ingredient;
                     } else {
                         return null;
@@ -74,8 +74,8 @@ public class RecipeRepository {
             .filter(recipe -> recipe.getIngredients()
                 .stream()
                 .anyMatch(ingredient -> {
-                    if (ingredient instanceof ComplexIngredient) {
-                        return ((ComplexIngredient) ingredient).getIngredients()
+                    if (ingredient instanceof CompositeIngredient) {
+                        return ((CompositeIngredient) ingredient).getIngredients()
                             .stream()
                             .anyMatch(complexIngredient -> complexIngredient.getName().contains("olive oil"));
                     } else {
@@ -97,7 +97,7 @@ public class RecipeRepository {
                         .map(ingredient -> {
                             if (ingredient instanceof SimpleIngredient) {
                                 return ingredient;
-                            } else if (ingredient instanceof ComplexIngredient) {
+                            } else if (ingredient instanceof CompositeIngredient) {
                                 return ingredient;
                             } else {
                                 return null;
