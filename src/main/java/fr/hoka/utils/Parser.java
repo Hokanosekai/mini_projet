@@ -86,6 +86,7 @@ public class Parser {
                     ? new CompositeIngredient.Builder()
                             .setName(name)
                             .setIngredients(this.parseIngredients(childIngredients))
+                            .setSteps(this.parseSteps(childNode))
                             .build()
                     : new SimpleIngredient.Builder()
                             .setName(name)

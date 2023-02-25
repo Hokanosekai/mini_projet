@@ -45,13 +45,4 @@ public class CompositeIngredient extends Ingredient {
             return new CompositeIngredient(this.name, this.ingredients, this.steps);
         }
     }
-
-    @Override
-    public String toString() {
-        return "ComplexIngredient{" +
-                "\n\tname='" + this.getName() + '\'' +
-                "\n\t, ingredients=" + this.ingredients +
-                "\n\t, steps=" + this.steps +
-                "\n}";
-    }
 }

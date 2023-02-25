@@ -51,13 +51,4 @@ public class SimpleIngredient extends Ingredient {
             return new SimpleIngredient(this.name, this.amount, this.unit);
         }
     }
-
-    @Override
-    public String toString() {
-        return "SimpleIngredient{" +
-                "\n\tname='" + this.getName() + '\'' +
-                "\n\t, amount='" + this.amount + '\'' +
-                "\n\t, unit=" + this.unit +
-                "\n}";
-    }
 }
